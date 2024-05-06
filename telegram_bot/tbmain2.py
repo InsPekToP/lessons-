@@ -1,6 +1,5 @@
 #Прописать в BotFather /newbot.Затем назвать своего бота,затем прописать название без пробелов
 #t.me/InsPekToP_test_bot
-#7178181884:AAHGmvTcviDyW9pHbZqNQ503DBVLb-3CymM
 #pip install pyTelegramBotAPI
 
 import telebot
