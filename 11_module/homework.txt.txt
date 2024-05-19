@@ -1,0 +1,43 @@
+git init
+echo $null >> filename.sass #создаем файлы через терминал
+mkdir bin  #создаем папки через терминал
+mkdir admin
+mkdir config 
+cd admin
+echo $null >> exaple_admin.txt 
+cd..
+cd bin
+echo $null >> exaple_bin.txt
+cd..
+cd config
+echo $null >> exaple_config.txt
+cd..
+
+Создаем файл .gitignore и в него прописываем:
+*.sass
+admin/
+bin/
+config/
+
+git add .
+git commit -m "Первый коммит" #добавляем все файлы в локальное хранилище
+
+git branch blog
+git checkout blog #создаем и переходим в ветку blog
+
+mkdir blog
+cd blog
+echo $null >> index.js
+echo $null >> index.html
+cd..
+
+git add .
+git commit -m "Добавление ветки blog"
+
+git checkout master #Переход на ветку master
+
+#Создаем репозиторий на GitHub
+git remote add origin https://github.com/InsPekToP/11module_homework.git
+git push -u origin master
+
+https://github.com/InsPekToP/11module_homework.git #ссылка на репозиторий
